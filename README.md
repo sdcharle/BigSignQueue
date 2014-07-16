@@ -20,7 +20,7 @@ I hope you like this, also I hope my new cable lasts longer than the previous on
 ##The 'API'
 You can send JSON to the server on port 6666 (or whatever port you end up using!)
 The format is:
-
+```
 {
   "start_time":"2014-08-23 12:34:56",
   "life_time":900,
@@ -28,13 +28,14 @@ The format is:
   "immediate":"False",
   "message":"Phone's ringing, dude"
 }
+```
 
 But you could send this:
-
+```
 {
   "message":"Phone's ringing, dude"
 }
-
+```
 And the message would have a lifetime of the default (60 seconds currently but I'm thinking that won't work if you have a lot in your queue.)
 
 SDC
